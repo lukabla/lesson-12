@@ -1,0 +1,239 @@
+p,
+li {
+  cursor: default;
+}
+.product-page {
+  display: flex;
+  justify-content: space-between;
+}
+.product-image {
+  width: 49%;
+}
+.product-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background: #b0b0b0;
+  box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.3);
+  object-fit: cover;
+}
+.product-details {
+  width: 49%;
+  border-radius: 24px;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.3);
+}
+.product-details-header {
+  padding: 32px 40px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-element {
+  border-radius: 15px;
+  background: #29b24e;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 6px 11px;
+  cursor: pointer;
+}
+.mid-element,
+.right-element {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 23px;
+  opacity: 0.6;
+  cursor: default;
+}
+.right-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.details-text {
+  padding: 0 40px 0 40px;
+}
+h2 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  text-align: start;
+}
+.p {
+  font-size: 14px;
+  opacity: 0.8;
+  padding-bottom: 40px;
+}
+.after-3::after {
+  content: "";
+  width: 100%;
+  background: #ececec;
+  height: 1px;
+  display: block;
+}
+.details-list {
+  padding: 16px 40px;
+}
+.details-list ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  opacity: 0.8;
+}
+.details-house-list {
+  padding: 24px 40px 40px 40px;
+  display: flex;
+  gap: 111px;
+}
+.details-house-list h5 {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+  padding: 0;
+}
+.details-house-list p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.first-list,
+.third-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.details-list-media {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.product-details-footer {
+  padding: 24px 40px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.product-details-footer p {
+  color: #29b24e;
+  font-size: 36px;
+  font-weight: 600;
+  padding-left: 54px;
+}
+.product-details-footer mark {
+  font-size: 16px;
+  font-weight: 400;
+  background: none;
+}
+.seller-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.message {
+  border-radius: 12px;
+  border: 1px solid #29b24e;
+  padding: 13px 26px;
+  color: #29b24e;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.call {
+  padding: 13px 26px;
+  border-radius: 12px;
+  background: #29b24e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+footer h4 {
+  color: #fff;
+  font-size: 14px;
+  padding: 32px 0 40px 0;
+  text-align: center;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .product-page {
+    flex-direction: column;
+  }
+  .product-details-header {
+    padding: 10px 20px 24px;
+  }
+  .details-text {
+    padding: 0 20px;
+  }
+  .details-list {
+    padding: 16px 20px;
+  }
+  .product-details {
+    flex-direction: column;
+    gap: 42px;
+  }
+  .product-image {
+    width: calc(100% - 40px);
+    margin: auto;
+  }
+  .product-details {
+    width: 100%;
+  }
+  .details-house-list {
+    padding: 16px 20px;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .details-list-media {
+    flex-direction: row;
+    gap: 4px;
+    justify-content: space-between;
+  }
+  .details-list-media p {
+    text-align: end;
+  }
+  .product-details-footer {
+    padding: 24px 20px;
+    flex-direction: column;
+  }
+  .product-details-footer p {
+    margin-left: -110px;
+    margin-top: -17px;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+  .seller-contact {
+    gap: 12px;
+    flex-direction: column-reverse;
+  }
+  .call {
+    width: 100%;
+  }
+  .message {
+    width: 100%;
+  }
+}

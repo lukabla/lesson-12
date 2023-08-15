@@ -32,7 +32,7 @@ body {
 }
 .conteiner {
   max-width: 1640px;
-  width: calc(100% - 280px);
+  width: calc(100% - 180px);
   margin: 40px auto;
 }
 .navigation {
@@ -444,7 +444,6 @@ footer {
   height: 1px;
   border-radius: 40px;
   display: block;
-  margin-top: 16px;
 }
 .first {
   display: flex;
